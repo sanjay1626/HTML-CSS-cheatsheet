@@ -11,47 +11,142 @@
         <h1>HTML & CSS Cheat Sheet</h1>
     </header>
     <main>
-        <!--HTM Section-->
-        <h2>HTML Headings</h2>
+        <!--Section: HTML Structure & Key Concepts-->
+        <h2>HTML Structure & Key Concepts</h2>
         <table>
            <thead>
             <tr>
-                <th>Element</th>
-                <th>Syntax</th>
+                <th>Concept</th>
+                <th>Syntax / Tag</th>
                 <th>Description</th>
             </tr>
            </thead>
            <tbody>
-            <tr>
-                <td>&lt;h1&gt;</td>
-                <td><code>&lt;h1&gt;Heading&lt;/h1&gt;</code></td>
-                <td>Main heading tag, usually used once per page.</td>
-            </tr>
-            <tr>
-                <td>color</td>
-                <td><code>color: red</code></td>
-                <td>CSS property to set text color.</td>
-            </tr>
+            <tr><td>Element</td><td><code>&lt;h1&gt;Heading&lt;/h1&gt;</code></td><td>HTML element is a unit of content composed of tags and content.</td></tr>
+            <tr><td>Opening Tag</td><td><code>&lt;p&gt;</code></td><td>Starts an HTML element.</td></tr>
+            <tr><td>Closing Tag</td><td><code>&lt;/p&gt;</code></td><td>Ends an HTML element.</td></tr>
+            <tr><td>Self-Closing Tag</td><td><code>&lt;br&gt;</code></td><td>Does not require a closing tag (used for line breaks).</td></tr>
+            <tr><td>Attribute</td><td><code>id="main"</code></td><td>Provides additional information about an element.</td></tr>
+            <tr><td>HyperText</td><td><code>&lt;a href="..."&gt;&lt;/a&gt;</code></td><td>Links to other content or pages.</td></tr>
            </tbody>
         </table>
-        <!--CSS Section-->
-        <h2>CSS Properties</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Property</th>
-        <th>Example</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>color</td>
-        <td><code>color: red;</code></td>
-        <td>Sets the text color.</td>
-      </tr>
-    </tbody>
-  </table>
+
+         <!-- Section: Display & Style Text -->
+    <h2>Display & Style Text</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Element</th>
+          <th>Syntax</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Paragraph</td><td><code>&lt;p&gt;Text&lt;/p&gt;</td></code><td>Defines a paragraph block of text.</td></tr>
+        <tr><td>Span</td><td><code>&lt;span&gt;Inline text&lt;/span&gt;</code></td><td>Used for styling inline portions of text.</td></tr>
+        <tr><td>Emphasis</td><td><code>&lt;em&gt;important&lt;/em&gt;</code></td><td>Renders text in italics for emphasis.</td></tr>
+        <tr><td>Strong</td><td><code>&lt;strong&gt;bold&lt;/strong&gt;</code></td><td>Displays text as bold, indicating importance.</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Section: Lists -->
+    <h2>Lists</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Syntax</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Unordered List</td><td><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></td><td>Creates a bulleted list.</td></tr>
+        <tr><td>Ordered List</td><td><code>&lt;ol&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ol&gt;</code></td><td>Creates a numbered list.</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Section: Images and Media -->
+    <h2>Images and Media</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Element</th>
+          <th>Example</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Image</td><td><code>&lt;img src="image.jpg" alt="desc"&gt;</code></td><td>Displays an image; requires src and alt attributes.</td></tr>
+        <tr><td>Video</td><td><code>&lt;video src="video.mp4" controls&gt;&lt;/video&gt;</code></td><td>Embeds a video with playback controls.</td></tr>
+        <tr><td>Audio</td><td><code>&lt;audio controls&gt;&lt;source src="song.mp3"&gt;&lt;/audio&gt;</code></td><td>Embeds audio with controls.</td></tr>
+        <tr><td>Embed</td><td><code>&lt;embed src="file.gif"&gt;</code></td><td>Embeds external media like GIFs or PDFs.</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Section: Semantic HTML -->
+    <h2>Semantic HTML</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Element</th>
+          <th>Example</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><code>&lt;header&gt;</code></td><td>Page top section</td><td>Introductory content or site branding.</td></tr>
+        <tr><td><code>&lt;main&gt;</code></td><td>Wraps main content</td><td>Holds the primary page content.</td></tr>
+        <tr><td><code>&lt;footer&gt;</code></td><td>Page bottom</td><td>Contains copyright or links.</td></tr>
+        <tr><td><code>&lt;section&gt;</code></td><td>Logical content grouping</td><td>Organizes related content.</td></tr>
+        <tr><td><code>&lt;article&gt;</code></td><td>Blog post or self-contained block</td><td>Can stand alone outside the page.</td></tr>
+        <tr><td><code>&lt;aside&gt;</code></td><td>Sidebar</td><td>Contains additional, related content.</td></tr>
+        <tr><td><code>&lt;figure&gt;</code></td><td>&lt;figure&gt;&lt;img src="..."&gt;&lt;/figure&gt;</td><td>Wraps media like images or charts.</td></tr>
+        <tr><td><code>&lt;figcaption&gt;</code></td><td>Text inside &lt;figure&gt;</td><td>Describes the media.</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Section: Tables -->
+    <h2>HTML Tables</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Element</th>
+          <th>Syntax</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Table</td><td><code>&lt;table&gt;</code></td><td>Creates a table container.</td></tr>
+        <tr><td>Row</td><td><code>&lt;tr&gt;</code></td><td>Defines a row of cells.</td></tr>
+        <tr><td>Cell</td><td><code>&lt;td&gt;</code></td><td>Defines a cell with data.</td></tr>
+        <tr><td>Header Cell</td><td><code>&lt;th&gt;</code></td><td>Table header text.</td></tr>
+        <tr><td>colspan / rowspan</td><td><code>&lt;td colspan="2"&gt;</code></td><td>Spans columns/rows.</td></tr>
+        <tr><td><code>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</code></td><td>Sections of table</td><td>Separates header, body, and footer rows.</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Section: More HTML Concepts -->
+    <h2>More HTML Concepts</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Concept</th>
+          <th>Example</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>DOCTYPE</td><td><code>&lt;!DOCTYPE html&gt;</code></td><td>Declares the HTML version (HTML5).</td></tr>
+        <tr><td>html element</td><td><code>&lt;html lang="en"&gt;</code></td><td>Root element for the document.</td></tr>
+        <tr><td>head element</td><td><code>&lt;head&gt;&lt;/head&gt;</code></td><td>Contains metadata, title, and links.</td></tr>
+        <tr><td>title</td><td><code>&lt;title&gt;My Page&lt;/title&gt;</code></td><td>Text shown on the browser tab.</td></tr>
+        <tr><td>Comments</td><td><code>&lt;!-- This is a comment --&gt;</code></td><td>Ignored by the browser.</td></tr>
+        <tr><td>Whitespace</td><td>Indentation & spacing</td><td>Improves readability and structure.</td></tr>
+        <tr><td>Anchor to Same Page</td><td><code>&lt;a href="#top"&gt;Top&lt;/a&gt;</code></td><td>Jumps to a specific section.</td></tr>
+        <tr><td>MDN Reference</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML on MDN</a></td><td>Official HTML documentation & examples.</td></tr>
+      </tbody>
+    </table>
+
     </main>
     
 </body>

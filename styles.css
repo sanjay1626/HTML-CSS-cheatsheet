@@ -1,48 +1,81 @@
+/* Base Layout */
 body {
-    background-color: lightcyan;
-    color: #333;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-  }
-  
-  h1 {
-    color: darkblue;
-    text-align: center;
-    
-  }
-  h2 {
-    color: #004080;
-    margin-top: 40px;
-    border-bottom: 2px solid #004080;
-    padding-bottom: 5px;
-  }
-  
+  background-color: #f0f8ff;
+  color: #222;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Main Heading */
+h1 {
+  color: #003366;
+  text-align: center;
+  background-color: #e6f2ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+h2 {
+  color: #004080;
+  margin-top: 50px;
+  border-bottom: 2px solid #004080;
+  padding-bottom: 5px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0 40px;
+  overflow-x: auto;
+  display: block;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Cells */
+th, td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Table Header Styling */
+th {
+  background-color: #003366;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Code Block Styling */
+code {
+  background-color: #1e1e1e;
+  color: #ffcc00;
+  font-family: monospace;
+  padding: 6px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 5px;
+  white-space: pre-wrap;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
   table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 40px;
-    overflow-x:auto;
-    display: block;
+    font-size: 14px;
   }
-  
-  th, td {
-    border: 1px solid #666;
-    padding: 10px;
-    text-align: left;
+
+  h1 {
+    font-size: 24px;
   }
-  
-  th {
-    background-color: darkblue;
-    color: white;
+
+  h2 {
+    font-size: 20px;
   }
-  code {
-    background-color: #080808;
-    font-family: monospace;
-    padding: 6px 8px; /* increased padding */
-    border-radius: 4px;
-    display: inline-block;
-    line-height: 1.4; /* gives more vertical space */
-    color: red;
-  }
-  
-  
+}
