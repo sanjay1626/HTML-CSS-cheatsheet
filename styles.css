@@ -1,0 +1,40 @@
+body {
+    background-color: lightcyan;
+    color: #333;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: darkblue;
+    text-align: center;
+    
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #666;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: darkblue;
+    color: white;
+  }
+  code {
+    background-color: #080808;
+    font-family: monospace;
+    padding: 6px 8px; /* increased padding */
+    border-radius: 4px;
+    display: inline-block;
+    line-height: 1.4; /* gives more vertical space */
+    color: red;
+  }
+  
+  
