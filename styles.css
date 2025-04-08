@@ -10,11 +10,19 @@ body {
     text-align: center;
     
   }
+  h2 {
+    color: #004080;
+    margin-top: 40px;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 5px;
+  }
   
   table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 40px;
+    overflow-x:auto;
+    display: block;
   }
   
   th, td {
