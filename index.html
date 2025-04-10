@@ -18,6 +18,11 @@
         <li><a href="#html-list-section">HTML Lists</a></li>
         <li><a href="#form-inputs">Form Input Types</a></li>
         <li><a href="#media-section">Media</a></li>
+        <li><a href="#css-ui">UI/UX CSS</a></li>
+        <li><a href="#css-display">Display Values</a></li>
+        <li><a href="#css-flexbox">CSS Flexbox</a></li>
+        <li><a href="#css-grid">CSS Grid</a></li>
+        <li><a href="#layout-playground">CCS Layout Playground</a></li>
       </ul>
     </aside>
   
@@ -305,11 +310,245 @@
     </tr>
   </tbody>
 </table>
+<!--CSS for UI/UX design-->
+<h2 id="css-ui">CSS for UI & UX Design</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Example</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>box-shadow</td>
+      <td><code>box-shadow: 0 2px 6px rgba(0,0,0,0.2);</code></td>
+      <td>Adds soft depth/shadow to elements (like cards, buttons).</td>
+    </tr>
+    <tr>
+      <td>border-radius</td>
+      <td><code>border-radius: 8px;</code></td>
+      <td>Creates rounded corners for smoother UI elements.</td>
+    </tr>
+    <tr>
+      <td>transition</td>
+      <td><code>transition: all 0.3s ease;</code></td>
+      <td>Makes hover/animation effects smoother.</td>
+    </tr>
+    <tr>
+      <td>hover selector</td>
+      <td><code>button:hover { background-color: navy; }</code></td>
+      <td>Changes style when user hovers for better feedback.</td>
+    </tr>
+    <tr>
+      <td>cursor</td>
+      <td><code>cursor: pointer;</code></td>
+      <td>Makes clickable elements feel interactive.</td>
+    </tr>
+    <tr>
+      <td>flexbox</td>
+      <td><code>display: flex;<br>justify-content: center;</code></td>
+      <td>Layouts content easily across rows/columns.</td>
+    </tr>
+    <tr>
+      <td>gap</td>
+      <td><code>gap: 20px;</code></td>
+      <td>Controls spacing between flex/grid items.</td>
+    </tr>
+    <tr>
+      <td>z-index</td>
+      <td><code>z-index: 10;</code></td>
+      <td>Controls element stacking order (for modals/tooltips).</td>
+    </tr>
+    <tr>
+      <td>overflow</td>
+      <td><code>overflow: auto;</code></td>
+      <td>Handles scrollbars when content overflows.</td>
+    </tr>
+  </tbody>
+</table>
+ <!--CSS Display Border/flex box-->
+ <h2 id="css-display">Display Values</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>Example</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>block</td>
+      <td><code>display: block;</code></td>
+      <td>Starts on a new line, takes full width (e.g., div, p).</td>
+    </tr>
+    <tr>
+      <td>inline</td>
+      <td><code>display: inline;</code></td>
+      <td>Stays within line, doesn't break layout (e.g., span).</td>
+    </tr>
+    <tr>
+      <td>inline-block</td>
+      <td><code>display: inline-block;</code></td>
+      <td>Like inline but supports width/height.</td>
+    </tr>
+    <tr>
+      <td>flex</td>
+      <td><code>display: flex;</code></td>
+      <td>One-dimensional layout (row or column).</td>
+    </tr>
+    <tr>
+      <td>grid</td>
+      <td><code>display: grid;</code></td>
+      <td>Two-dimensional layout (rows + columns).</td>
+    </tr>
+    <tr>
+      <td>none</td>
+      <td><code>display: none;</code></td>
+      <td>Hides the element from the page.</td>
+    </tr>
+  </tbody>
+</table>
+<!--CSS Flexbox-->
+<h2 id="css-flexbox">CSS Flexbox</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Example</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>display</td>
+      <td><code>display: flex;</code></td>
+      <td>Enables flexbox on a container element.</td>
+    </tr>
+    <tr>
+      <td>flex-direction</td>
+      <td><code>flex-direction: row;</code></td>
+      <td>Sets the direction (row, row-reverse, column, column-reverse).</td>
+    </tr>
+    <tr>
+      <td>justify-content</td>
+      <td><code>justify-content: space-between;</code></td>
+      <td>Aligns items on the main axis (start, center, space-between, etc.).</td>
+    </tr>
+    <tr>
+      <td>align-items</td>
+      <td><code>align-items: center;</code></td>
+      <td>Aligns items on the cross axis (start, center, stretch, etc.).</td>
+    </tr>
+    <tr>
+      <td>gap</td>
+      <td><code>gap: 10px;</code></td>
+      <td>Sets spacing between flex items.</td>
+    </tr>
+    <tr>
+      <td>flex-wrap</td>
+      <td><code>flex-wrap: wrap;</code></td>
+      <td>Allows items to wrap onto multiple lines.</td>
+    </tr>
+    <tr>
+      <td>align-self</td>
+      <td><code>align-self: flex-end;</code></td>
+      <td>Overrides align-items for a single item.</td>
+    </tr>
+    <tr>
+      <td>flex</td>
+      <td><code>flex: 1;</code></td>
+      <td>Sets item size relative to others.</td>
+    </tr>
+  </tbody>
+</table>
+<!--CSS Grid -->
+<h2 id="css-grid">CSS Grid</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Example</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>display</td>
+      <td><code>display: grid;</code></td>
+      <td>Enables grid layout on a container.</td>
+    </tr>
+    <tr>
+      <td>grid-template-columns</td>
+      <td><code>grid-template-columns: 1fr 1fr;</code></td>
+      <td>Defines the number and width of columns.</td>
+    </tr>
+    <tr>
+      <td>grid-template-rows</td>
+      <td><code>grid-template-rows: 100px auto;</code></td>
+      <td>Defines the number and height of rows.</td>
+    </tr>
+    <tr>
+      <td>gap</td>
+      <td><code>gap: 20px;</code></td>
+      <td>Sets space between rows and columns.</td>
+    </tr>
+    <tr>
+      <td>grid-column</td>
+      <td><code>grid-column: 1 / 3;</code></td>
+      <td>Item spans across columns.</td>
+    </tr>
+    <tr>
+      <td>grid-row</td>
+      <td><code>grid-row: 1 / 2;</code></td>
+      <td>Item spans across rows.</td>
+    </tr>
+    <tr>
+      <td>place-items</td>
+      <td><code>place-items: center;</code></td>
+      <td>Aligns items both vertically and horizontally.</td>
+    </tr>
+    <tr>
+      <td>repeat()</td>
+      <td><code>grid-template-columns: repeat(3, 1fr);</code></td>
+      <td>Repeats columns automatically.</td>
+    </tr>
+  </tbody>
+</table>
+<!--Playground Section-->
+<h2 id="layout-playground">🛠 CSS Layout Playground</h2>
+<p>Use this area to test different layouts using Flexbox or Grid. Try changing the <code>display</code>, <code>justify-content</code>, <code>gap</code>, and more in your CSS file or using developer tools.</p>
+<label for="layout-select"><strong>Choose Layout:</strong></label>
+<select id="layout-select">
+  <option value="flex">Flexbox</option>
+  <option value="grid">Grid</option>
+</select>
+
+<div class="playground-container">
+  <div class="play-box">1</div>
+  <div class="play-box">2</div>
+  <div class="play-box">3</div>
+  <div class="play-box">4</div>
+</div>
 
 </main>
     </div>
   </div>  
     
-    
 </body>
+<script>
+  const select = document.getElementById('layout-select');
+  const container = document.querySelector('.playground-container');
+
+  select.addEventListener('change', function () {
+    container.classList.remove('flex', 'grid');
+    container.classList.add(this.value); // adds 'flex' or 'grid'
+  });
+
+  // Set default layout on load
+  container.classList.add('flex');
+</script>
+
 </html>

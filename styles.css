@@ -122,4 +122,34 @@ code {
     font-size: 20px;
   }
 }
+/* Layout Playground */
+.playground-container {
+  display: flex; /* Change to 'grid' to test Grid */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* or remove to test overflow */
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin-top: 30px;
+  border: 2px dashed #ccc;
+  min-height: 200px;
+}
+
+.play-box {
+  width: 80px;
+  height: 80px;
+  background-color: #004080;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 8px;
+}
+.playground-container.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  place-items: center;
+}
 
