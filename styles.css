@@ -1,4 +1,47 @@
 /* Base Layout */
+.layout {
+  display: flex;
+}
+/* Sidebar */
+aside {
+  width: 200px;
+  background-color: #e6f2ff;
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+aside h3 {
+  margin-top: 0;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside ul li {
+  margin: 10px 0;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: #004080;
+  font-weight: bold;
+}
+
+aside ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+}
+
 body {
   background-color: #f0f8ff;
   color: #222;
@@ -79,3 +122,4 @@ code {
     font-size: 20px;
   }
 }
+

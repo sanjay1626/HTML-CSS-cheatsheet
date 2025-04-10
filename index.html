@@ -7,12 +7,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+  <div class="layout">
+    <aside role="navigation" aria-label="Quick Links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#html-section">HTML Topics</a></li>
+        <li><a href="#css-section">CSS Topics</a></li>
+        <li><a href="#tables-section">HTML Tables</a></li>
+        <li><a href="#semantic-html-section">Semantic HTML</a></li>
+        <li><a href="#html-list-section">HTML Lists</a></li>
+        <li><a href="#form-inputs">Form Input Types</a></li>
+        <li><a href="#media-section">Media</a></li>
+      </ul>
+    </aside>
+  
+    <div class ="content">
+      <header>
         <h1>HTML & CSS Cheat Sheet</h1>
     </header>
     <main>
         <!--Section: HTML Structure & Key Concepts-->
-        <h2>HTML Structure & Key Concepts</h2>
+        <h2 id="html-section">HTML Structure & Key Concepts</h2>
         <table>
            <thead>
             <tr>
@@ -42,7 +57,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr><td>Paragraph</td><td><code>&lt;p&gt;Text&lt;/p&gt;</td></code><td>Defines a paragraph block of text.</td></tr>
+        <tr><td>Paragraph</td><td><code>&lt;p&gt;Text&lt;/p&gt;</code></td><td>Defines a paragraph block of text.</td></tr>
         <tr><td>Span</td><td><code>&lt;span&gt;Inline text&lt;/span&gt;</code></td><td>Used for styling inline portions of text.</td></tr>
         <tr><td>Emphasis</td><td><code>&lt;em&gt;important&lt;/em&gt;</code></td><td>Renders text in italics for emphasis.</td></tr>
         <tr><td>Strong</td><td><code>&lt;strong&gt;bold&lt;/strong&gt;</code></td><td>Displays text as bold, indicating importance.</td></tr>
@@ -50,7 +65,7 @@
     </table>
 
     <!-- Section: Lists -->
-    <h2>Lists</h2>
+    <h2 id="html-list-section">Lists</h2>
     <table>
       <thead>
         <tr>
@@ -66,7 +81,7 @@
     </table>
 
     <!-- Section: Images and Media -->
-    <h2>Images and Media</h2>
+    <h2 id="media-section">Images and Media</h2>
     <table>
       <thead>
         <tr>
@@ -84,7 +99,7 @@
     </table>
 
     <!-- Section: Semantic HTML -->
-    <h2>Semantic HTML</h2>
+    <h2 id="semantic-html-section">Semantic HTML</h2>
     <table>
       <thead>
         <tr>
@@ -106,7 +121,7 @@
     </table>
 
     <!-- Section: Tables -->
-    <h2>HTML Tables</h2>
+    <h2 id="tables-section">HTML Tables</h2>
     <table>
       <thead>
         <tr>
@@ -124,6 +139,55 @@
         <tr><td><code>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</code></td><td>Sections of table</td><td>Separates header, body, and footer rows.</td></tr>
       </tbody>
     </table>
+    <!--Form Sections-->
+    <h2 id="form-inputs">Common Form Input Types</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Syntax</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Text</td>
+      <td><code>&lt;input type="text"&gt;</code></td>
+      <td>Standard single-line text field.</td>
+    </tr>
+    <tr>
+      <td>Password</td>
+      <td><code>&lt;input type="password"&gt;</code></td>
+      <td>Hides characters as the user types.</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><code>&lt;input type="email"&gt;</code></td>
+      <td>Validates input for an email format.</td>
+    </tr>
+    <tr>
+      <td>Number</td>
+      <td><code>&lt;input type="number"&gt;</code></td>
+      <td>Accepts numeric input (with min/max options).</td>
+    </tr>
+    <tr>
+      <td>Checkbox</td>
+      <td><code>&lt;input type="checkbox"&gt;</code></td>
+      <td>Creates a checkable box.</td>
+    </tr>
+    <tr>
+      <td>Radio</td>
+      <td><code>&lt;input type="radio" name="option"&gt;</code></td>
+      <td>Selectable options where only one can be chosen per group.</td>
+    </tr>
+    <tr>
+      <td>Submit</td>
+      <td><code>&lt;input type="submit" value="Submit"&gt;</code></td>
+      <td>Submits the form data.</td>
+    </tr>
+  </tbody>
+</table>
+
 
     <!-- Section: More HTML Concepts -->
     <h2>More HTML Concepts</h2>
@@ -144,10 +208,108 @@
         <tr><td>Whitespace</td><td>Indentation & spacing</td><td>Improves readability and structure.</td></tr>
         <tr><td>Anchor to Same Page</td><td><code>&lt;a href="#top"&gt;Top&lt;/a&gt;</code></td><td>Jumps to a specific section.</td></tr>
         <tr><td>MDN Reference</td><td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML on MDN</a></td><td>Official HTML documentation & examples.</td></tr>
+      <!--Adding more real world concepts-->
+        <tr>
+          <td>Open Link in New Tab</td>
+          <td><code>&lt;a href="https://example.com" target="_blank"&gt;Visit&lt;/a&gt;</code></td>
+          <td>Opens the link in a new browser tab or window.</td>
+        </tr>
+        <tr>
+          <td>Form Element</td>
+          <td><code>&lt;form action="/submit"&gt;&lt;/form&gt;</code></td>
+          <td>Wraps inputs for user data submission.</td>
+        </tr>
+        <tr>
+          <td>Input Field</td>
+          <td><code>&lt;input type="text"&gt;</code></td>
+          <td>Creates a text input field.</td>
+        </tr>
+        <tr>
+          <td>Button</td>
+          <td><code>&lt;button&gt;Click&lt;/button&gt;</code></td>
+          <td>Creates a clickable button.</td>
+        </tr>
+        <tr>
+          <td>Meta Charset</td>
+          <td><code>&lt;meta charset="UTF-8"&gt;</code></td>
+          <td>Sets character encoding to support all characters.</td>
+        </tr>
+        <tr>
+          <td>Alt Attribute</td>
+          <td><code>&lt;img src="..." alt="Description"&gt;</code></td>
+          <td>Provides screen reader access and improves SEO.</td>
+        </tr>
       </tbody>
     </table>
 
-    </main>
+    <!-- Section: CSS Basics -->
+<h2 id="css-section">CSS Basics</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Example</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>color</td>
+      <td><code>color: red;</code></td>
+      <td>Sets the text color.</td>
+    </tr>
+    <tr>
+      <td>background-color</td>
+      <td><code>background-color: lightblue;</code></td>
+      <td>Sets the background color of an element.</td>
+    </tr>
+    <tr>
+      <td>font-family</td>
+      <td><code>font-family: Arial, sans-serif;</code></td>
+      <td>Specifies the font style for text.</td>
+    </tr>
+    <tr>
+      <td>font-size</td>
+      <td><code>font-size: 16px;</code></td>
+      <td>Sets the size of the text.</td>
+    </tr>
+    <tr>
+      <td>margin</td>
+      <td><code>margin: 20px;</code></td>
+      <td>Sets outer spacing around elements.</td>
+    </tr>
+    <tr>
+      <td>padding</td>
+      <td><code>padding: 10px;</code></td>
+      <td>Sets inner spacing inside elements.</td>
+    </tr>
+    <tr>
+      <td>border</td>
+      <td><code>border: 1px solid black;</code></td>
+      <td>Draws a border around elements.</td>
+    </tr>
+    <tr>
+      <td>display</td>
+      <td><code>display: flex;</code></td>
+      <td>Defines how elements are displayed (block, inline, flex, etc.).</td>
+    </tr>
+    <tr>
+      <td>position</td>
+      <td><code>position: relative;</code></td>
+      <td>Controls element positioning (static, relative, absolute, fixed).</td>
+    </tr>
+    <tr>
+      <td>text-align</td>
+      <td><code>text-align: center;</code></td>
+      <td>Aligns text horizontally (left, center, right).</td>
+    </tr>
+  </tbody>
+</table>
+
+</main>
+    </div>
+  </div>  
+    
     
 </body>
 </html>
