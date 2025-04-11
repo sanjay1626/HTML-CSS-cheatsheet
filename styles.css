@@ -1,3 +1,6 @@
+*{
+  font-family: monospace;
+}
 /* Base Layout */
 .layout {
   display: flex;
